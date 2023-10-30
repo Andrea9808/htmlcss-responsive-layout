@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
 }
+
+p {line-height: 25px;}
 
 /* stili header */
 
@@ -46,7 +49,7 @@ header .container{
 
 /* prima colonna */
 
-.row div img{
+.what_is img{
     width: 100%;
     margin-bottom: -24px;
     padding-top:30px;
@@ -87,19 +90,48 @@ header .container{
 
 /* DEVELOPMENT */
 
+
+.dev_row img{
+    width: 70%;
+    padding: 10px;
+    margin: 25px;
+}
+
+
+
+.strategic h3,.strategic p {
+    padding: 20px;
+    color: white;
+}
+
 .dev_row{
     background-color: rgb(179, 123, 231);
-    min-height: 300px;
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .developement{
     width: 70%;
-    min-height: 100px;
     background-color: white;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: 50px;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 30px;
 }
+
+.developement a{
+    background-color: blueviolet;
+    padding: 16px;
+    border-radius: 25px;
+    font-size: 10px;
+    color: black;
+}
+
+.developement p{
+    margin-bottom: 30px;
+}
+
 
 /* TESTIMONIALS */
 
@@ -110,6 +142,38 @@ header .container{
     background-color: rgb(185, 65, 232);
     margin-top: 20px;
     border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+
+.text_testimonial{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text_testimonial span,.text_testimonial p{
+    padding-top: 20px;
+}
+.text_testimonial h3{
+    padding-top: 20px;
+    font-size: 30px;
+    color:  rgb(185, 65, 232);
+}
+
+.testimonial_row img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.testimonial_row p{
+    padding-bottom: 15px;
 }
 
 /* BENEFIT */
@@ -130,6 +194,36 @@ header .container{
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 20px;
+    padding: 30px;
+}
+
+.benefit_row h2 {
+    color: white;
+    text-align: center;
+}
+
+.benefit_row h1{
+    font-size: 40px;
+    color: rgb(179, 123, 231);
+    margin-bottom: 10px;
+}
+
+.benefit_row h3{
+    color: rgb(179, 123, 231);
+    margin-bottom: 10px;
+}
+
+.benefit_row p{
+    margin-bottom: 25px;
+}
+
+.benefit a{
+    background-color: rgb(179, 123, 231); ;
+    padding: 5px;
+    border-radius: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
 }
 
 /* ABOUT US */
@@ -165,13 +259,19 @@ header .container{
 @media all and (min-width: 481px){
 
 /* SEZIONE WHAT IS */
-    .row{
+
+    .what_is{
+            width: 100%;
+    }
+
+    .row_demo{
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
     } 
+    
 
-    .col{
+    .col_demo{
         width: calc(100%/3);
     }
 
@@ -183,11 +283,85 @@ header .container{
        width: 60%; 
     }
 
-}
+/*SEZIONE  DEVELOPMENT */
+    .dev_row img{
+    width: 90%;
+    padding: 10px;
+    margin: 25px;
+    }
+
+    .developement{
+        width: 90%;
+    }
+
+
+/* SEZIONE TESTIMONIALS */
+
+    .text_testimonial{
+        width: 90%;
+    }
+
+    .testimonials{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+    }
+
+    .testimonials img{
+        margin-left: 20px;
+    }
+
+    .testimonials div{
+        margin-left: 15px;
+        text-align: initial;
+    }
+
+/* SEZIONE BENEFIT */
+
+    /* h2 {
+        width: 100%;
+    }
+
+    .benefit {
+        width: 40%;
+        margin: 15px;
+    }
+
+    .benefit_row {
+        display: flex;
+        flex-wrap: wrap;
+    } */
+
 
 @media all and (min-width: 1200px){
 
-    /* .dev{
+    
+/*SEZIONE  DEVELOPMENT */
+
+    .developer{
+        background-color: rgb(179, 123, 231);
+    }
+
+    .dev_row {
         display: flex;
-    } */
+        align-items: center;
+  }
+    
+
+    .strategic,.developement {
+        width: 30%;
+        margin: 0 auto;
+      }
+
+    /* SEZIONE TESTIMONIALS */
+
+      .testimonials{
+        width: 80%;
+      }
+
+      .testimonial_row{
+        margin-bottom: 50px;
+      }
+
 }

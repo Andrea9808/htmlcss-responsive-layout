@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
     <title>Layout responsive</title>
@@ -30,37 +33,48 @@
     <main>
         <section class="what-is-father">
             <div class="container">
-                <div id="demo" class="row">
-                    <div id="first"  class="col what_is">
-                        <h3>Get a demo application</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus incidunt minima voluptatibus! </p>
-                        <span><a href="#"><i class="fa-brands fa-apple"></i> App Store</a>
-                        <img src="img/phone.png" alt="img telefono"></span>
+                <div id="demo" class="row_demo">
+                    <div id="first"  class="col_demo">
+                        <div class="what_is">
+                            <h3>Get a demo application</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus incidunt minima voluptatibus! </p>
+                            <span><a href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                            <img src="img/phone.png" alt="img telefono"></span>
+                        </div>
                     </div>
 
-                    <div class="col what_is second">
-                        <i class="fa-solid fa-file-code"></i>
-                        <h3>Clean Code</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                    <div class="col_demo">
+                        <div class="what_is second">
+                            <i class="fa-solid fa-file-code"></i>
+                            <h3>Clean Code</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                        </div>
                     </div>
 
-                    <div class="col what_is second">
-                        <i class="fa-solid fa-compass-drafting"></i>
-                        <h3>Web design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                    <div class="col_demo">
+                        <div class="what_is second">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <h3>Web design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                        </div>
                     </div>
 
-                    <div class="col what_is second">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                   
+                    <div class="col_demo">
+                        <div class=" what_is second">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                        </div>
                     </div>
 
-                    <div class="col what_is second">
-                        <i class="fa-solid fa-bullhorn"></i>
-                        <h3>Branding</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
-                    </div>
+                    <div class="col_demo">
+                        <div class="what_is second">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum explicabo officiis tempore cum!</p>
+                            </div>
+                         </div>
                 </div>
             </div>
         </section>
@@ -69,18 +83,25 @@
 
         <section class="developer">
             <div class="container">
-                <div class="row dev_row">
+                <div class="dev_row ">
                     <div class="strategic">
-                        <img src="" alt="">
-                        <h3></h3>
-                        <p></p>
+                        <div>
+                            <img src="img/planning1.png" alt="planning1">
+                        </div>
+
+                        <div>
+                            <h3>Strategic Planning</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus impedit cumque ab blanditiis ipsum esse autem saepe. Nesciunt consectetur eos assumenda, cupiditate ea veritatis repellendus quaerat reprehenderit perspiciatis eligendi eaque.</p>
+                        </div>
                     </div>
 
                     <div class="developement">
-                        <img src="" alt="">
-                        <span><strong>App Development</strong></span>
-                        <p><em></em></p>
-                        <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+                        <div>
+                             <img src="img/planning2.png" alt="planning2">
+                        </div>
+                            <span><strong>App Development</strong></span>
+                            <p><em>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption</em></p>
+                            <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
                     </div>
                 </div>
             </div>
@@ -90,29 +111,35 @@
 
         <section class="testimonials_father">
             <div class="container">
-                <div class="row">
-                    <div>
-                        <span></span>
-                        <h3></h3>
-                        <p></p>
+                <div class="testimonial_row">
+                    <div class="text_testimonial">
+                        <span>TESTIMONIALS</span>
+                        <h3>We are committed expert partners</h3>
+                        <p>We place huge value on strong relationships and have seen the benefit they bring to our business. Customer feedback is vital in helping us to get it right</p>
                     </div>
 
                     <div class="col testimonials">
-                        <img src="" alt="">
-                        <p></p>
-                        <span><strong></strong></span>
+                        <img src="img/testimonial1.jpg" alt="testimonial1">
+                        <div>
+                            <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit alias, distinctio temporibus, unde at nemo  <i class="fa-solid fa-quote-right"></i></p>
+                            <span><strong>NAT REYNOLDS</strong></span>
+                        </div>
                     </div>
 
                     <div class="col testimonials">
-                        <img src="" alt="">
-                        <p></p>
-                        <span><strong></strong></span>
+                        <img src="img/testimonial2.jpg" alt="testimonial2">
+                        <div>
+                            <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit alias, distinctio temporibus, unde at nemo  <i class="fa-solid fa-quote-right"></i></p>
+                            <span><strong>CELIA ALMEDA</strong></span>
+                        </div>
                     </div>
 
                     <div class="col testimonials">
-                        <img src="" alt="">
-                        <p></p>
-                        <span><strong></strong></span>
+                        <img src="img/testimonial3.jpg" alt="testimonial3">
+                        <div>
+                            <p><i class="fa-solid fa-quote-left"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis velit alias, distinctio temporibus, unde at nemo ! <i class="fa-solid fa-quote-right"></i></p>
+                            <span><strong>BOB ROBERTS</strong></span>
+                         </div>
                     </div>
                 </div>
             </div>
@@ -121,51 +148,63 @@
         <!-- MAIN BENEFITS -->
 
         <section class="benefit_father">
-            <div class="container">
-                <div class="row benefit_row">
+            <div class="container container_benefit">
+                <div class="benefit_row">
                     
-                    <h2></h2>
+                    <h2>Benefits of working with us</h2>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit ">
+                        <div class="benefit">
+                            <h1>01</h1>
+                            <h3>Hight Quality</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                         </div>
                     </div>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit">
+                        <div class="benefit">
+                            <h1>02</h1>
+                            <h3>Amazing Results</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                        </div>
                     </div>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit">
+                        <div class="benefit">
+                            <h1>03</h1>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                        </div>
                     </div>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit">
+                        <div class="benefit">
+                            <h1>04</h1>
+                            <h3>Amazing Results</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                        </div>
                     </div>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit">
+                        <div class="benefit">
+                            <h1>05</h1>
+                            <h3>Innovations</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                         </div>
                     </div>
 
-                    <div class="col benefit">
-                        <h4></h4>
-                        <h5></h5>
-                        <p></p>
-                        <a href="#"></a>
+                    <div class="col_benefit ">
+                        <div class="benefit">
+                            <h1>06</h1>
+                            <h3>Best Pricing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea possimus corrupti dicta aut, excepturi facere similique doloremque fugiat reiciendis.</p>
+                            <a href="#">more</a>
+                        </div>
                     </div>
                 </div>
             </div>

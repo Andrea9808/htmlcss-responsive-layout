@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* stili header */
+
+.container{
+    width: 100%;
+}
+
+.row_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    background-color: rgb(65, 65, 229);
+}
+
+/* stili main */
+
+/* DEMO */
+
+.what_is{
+    width: 70%;
+    min-height: 100px;
+    margin: 0 auto;
+    background-color: rgb(164, 164, 242);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* DEVELOPMENT */
+
+.dev_row{
+    background-color: rgb(179, 123, 231);
+    min-height: 300px;
+    margin-top: 50px;
+}
+
+.developement{
+    width: 70%;
+    min-height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+    width: 70%;
+    min-height: 100px;
+    margin: 0 auto;
+    background-color: rgb(185, 65, 232);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* BENEFIT */
+
+.benefit_row{
+    background-color: rgb(179, 123, 231);
+    min-height: 300px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+     padding-top: 30px;
+}
+
+
+.benefit{
+    width: 70%;
+    min-height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* ABOUT US */
+
+.about_us_row{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/* Tablet version */
+
+@media all and (min-height: 780px){
+
+    /* .row{
+        display: flex;
+    }
+
+    .col{
+        width: calc((100%/3)*2);
+    } */
+}
+
+@media all and (min-height: 1200px){
+
+    /* .dev{
+        display: flex;
+    } */
+}

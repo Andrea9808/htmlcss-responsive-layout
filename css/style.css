@@ -10,13 +10,23 @@
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
+header .container{
+    background-color: rgb(65, 65, 229);
+}
+
 .row_header{
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
-    background-color: rgb(65, 65, 229);
+    margin: 0 auto;
 }
+
 
 /* stili main */
 
@@ -25,11 +35,54 @@
 .what_is{
     width: 70%;
     min-height: 100px;
-    margin: 0 auto;
     background-color: rgb(164, 164, 242);
-    margin-top: 20px;
     border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
+
+
+/* prima colonna */
+
+.row div img{
+    width: 100%;
+    margin-bottom: -24px;
+    padding-top:30px;
+}
+
+.row div span a{
+    color: white;
+    background-color: rgb(66, 66, 228);
+    border-radius: 10px;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.what_is h3,.what_is p{
+    margin-bottom: 30px;
+}
+
+
+/* colonne restanti*/
+
+
+.second{
+    text-align: center;
+}
+
+.second h3{
+    color: rgb(42, 42, 216);
+}
+
+.second i{
+    font-size: 50px;
+    color: rgb(42, 42, 216);
+    padding-bottom: 20px;
+}
+
 
 
 /* DEVELOPMENT */
@@ -87,20 +140,52 @@
     padding-bottom: 50px;
 }
 
-/* Tablet version */
+/* PRICE */
 
-@media all and (min-height: 780px){
-
-    /* .row{
-        display: flex;
-    }
-
-    .col{
-        width: calc((100%/3)*2);
-    } */
+.price_row{
+    background-color:rgb(179, 123, 231); 
 }
 
-@media all and (min-height: 1200px){
+
+/* STILI FOOTER */
+
+.footer_row{
+    color: white;
+    background-color: rgb(61, 50, 50);
+}
+
+
+
+
+
+
+
+/* Tablet version */
+
+@media all and (min-width: 481px){
+
+/* SEZIONE WHAT IS */
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    } 
+
+    .col{
+        width: calc(100%/3);
+    }
+
+    #demo{
+        width: calc((100%/3) * 2);
+    }
+
+    #first{
+       width: 60%; 
+    }
+
+}
+
+@media all and (min-width: 1200px){
 
     /* .dev{
         display: flex;

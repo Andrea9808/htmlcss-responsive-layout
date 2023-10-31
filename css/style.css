@@ -345,21 +345,27 @@ nav ul li{display: none;}
 
     nav ul li{display: none;}
 
+    .row_header{
+        width: 90%;
+    }
+
 /* SEZIONE WHAT IS */
 
     .what_is{
-            width: 100%;
+        width: 90%;
     }
 
     .row_demo{
         display: flex;
         flex-wrap: wrap;
+        width: 90%;
         margin: 0 auto;
     } 
     
 
     .col_demo{
         width: calc(100%/3);
+
     }
 
 
@@ -405,6 +411,10 @@ nav ul li{display: none;}
 
     h2 {
         width: 100%;
+    }
+
+    .benefit{
+        width: 90%;
     }
 
     .col_benefit {
@@ -471,7 +481,7 @@ header{
 }
 
 .row_header{
-    width: 70%;
+    width: 90%;
 }
 
 .row_header i{
@@ -495,6 +505,13 @@ nav ul li a{
     color: white;
 }
 
+
+/* SEZIONE DEMO */
+
+.desktop_demo{
+    display: flex;
+    width: 95%;
+}
 
 
 /*SEZIONE  DEVELOPMENT */

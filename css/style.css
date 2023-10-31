@@ -352,7 +352,15 @@ nav ul li{display: none;}
 /* SEZIONE WHAT IS */
 
     .what_is{
-        width: 90%;
+        width: 100%;
+        height: 100%;
+    }
+
+    
+    .what_is img {
+        width: 100%;
+        margin-bottom: -75px;
+        padding-top: 30px;
     }
 
     .row_demo{
@@ -365,6 +373,7 @@ nav ul li{display: none;}
 
     .col_demo{
         width: calc(100%/3);
+        padding: 10px;
 
     }
 
@@ -510,26 +519,44 @@ nav ul li a{
 
 .desktop_demo{
     display: flex;
-    width: 95%;
+    width: 100%;
+}
+
+.what_is{
+    height: 100%;
+}
+
+.what_is img {
+    width: 80%;
+    margin-bottom: -75px;
+    padding-top: 30px;
 }
 
 
 /*SEZIONE  DEVELOPMENT */
 
     .developer{
-        background-color: rgb(179, 123, 231);
+        background-color: rgb(148 151 223);
     }
 
-    .dev_row {
+    .dev_row{
         display: flex;
-        align-items: center;
-  }
-    
+        background-color: transparent;
+    }
 
-    .strategic,.developement {
-        width: 30%;
-        margin: 0 auto;
-      }
+    .col_developer{
+        width: 100%;
+    }
+
+    .developement{
+        margin: 100px;
+        width: 50%;
+    }
+
+    .strategic{
+        width: 50%;
+        margin-left: 297px;
+    }
 
     /* SEZIONE TESTIMONIALS */
 

@@ -31,6 +31,8 @@ header .container{
 }
 
 
+nav ul li{display: none;}
+
 /* stili main */
 
 /* DEMO */
@@ -55,7 +57,7 @@ header .container{
     padding-top:30px;
 }
 
-.row div span a{
+.row_demo div span a{
     color: white;
     background-color: rgb(66, 66, 228);
     border-radius: 10px;
@@ -234,20 +236,101 @@ header .container{
     padding-bottom: 50px;
 }
 
+.about_us_row img{
+    width: 100%;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img_about_us{
+    width: 45%;
+    position: relative;
+}
+
+.about_us_row span{
+    color: rgb(179, 123, 231);
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about_us_row h2,.about_us_row h3{
+    color: rgb(179, 123, 231);
+    margin-bottom: 30px
+  
+}
+
+.about_us_row h2{
+    font-size: 40px;
+    margin:15px 0;
+}
+
+.about_us_row a{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+    border-radius: 24px;
+}
+
 /* PRICE */
 
 .price_row{
     background-color:rgb(179, 123, 231); 
+    text-align: center;
+    padding: 40px 0;
+    color: white;
 }
+
+.price_row span a{
+    text-decoration: underline;
+    color: white;
+}
+
+.price_row h6{
+    opacity: .5;
+}
+
+.price_row h1{
+    font-size: 50px;
+    color: #fda703;
+}
+
+.price_row h6,.price_row h2,.price_row h1,.price_row p{
+    margin-bottom: 10px;
+}
+
+#button_white{
+    margin: 25px 0;
+}
+
+#button_white a{
+    color: rgb(179, 123, 231);
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 20px;;
+}
+
+
 
 
 /* STILI FOOTER */
 
 .footer_row{
     color: white;
-    background-color: rgb(61, 50, 50);
+    background-color: rgb(74, 72, 72);
+    padding: 50px;
+    text-align: center;
 }
 
+.footer_row p{
+    margin-bottom: 30px;
+}
+
+.footer_row span a{
+    color: rgb(179, 123, 231)
+}
 
 
 
@@ -256,7 +339,11 @@ header .container{
 
 /* Tablet version */
 
+
+
 @media all and (min-width: 481px){
+
+    nav ul li{display: none;}
 
 /* SEZIONE WHAT IS */
 
@@ -275,12 +362,9 @@ header .container{
         width: calc(100%/3);
     }
 
-    #demo{
-        width: calc((100%/3) * 2);
-    }
 
-    #first{
-       width: 60%; 
+    #demo{
+       width: calc((100%/3) * 2); 
     }
 
 /*SEZIONE  DEVELOPMENT */
@@ -319,24 +403,100 @@ header .container{
 
 /* SEZIONE BENEFIT */
 
-    /* h2 {
+    h2 {
         width: 100%;
     }
 
-    .benefit {
-        width: 40%;
-        margin: 15px;
+    .col_benefit {
+        width: 50%;
+        margin-top: 20px;
+        
     }
 
     .benefit_row {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-    } */
+    }
 
+    /* SEZIONE ABOUT US */
+
+    .about_us_row{
+        display: flex;
+    }
+
+    .img-linkedin-about-us{
+        width: 50%;
+    }
+
+    .text-about-us{
+        width: 50%;
+        margin-right: 30px;
+    }
+
+    /* SEZIONE PREZZO */
+
+    .price_father{
+        background-color: rgb(179, 123, 231)
+    }
+
+    .price_row{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+
+    .footer_father{
+        background-color: rgb(74, 72, 72);
+    }
+
+    .footer_row{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+/* DESKTOP VERSION*/
 
 @media all and (min-width: 1200px){
 
-    
+/* HEADER */
+
+header{
+    background-color: blue;
+}
+
+.row_header{
+    width: 70%;
+}
+
+.row_header i{
+    display: none;
+}
+
+.row_header li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+nav ul li:last-child a {
+    color: black;
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+
+
 /*SEZIONE  DEVELOPMENT */
 
     .developer{
@@ -363,5 +523,38 @@ header .container{
       .testimonial_row{
         margin-bottom: 50px;
       }
+
+      /* SEZIONE BENEFIT */
+
+      h2 {
+        width: 100%;
+    }
+
+    .col_benefit {
+        width: 33%;
+        
+    }
+
+    .benefit_row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* SEZIONE PREZZO */
+
+    .price_row{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .footer_father{
+        background-color: rgb(74, 72, 72);
+    }
+
+    .footer_row{
+        width: 70%;
+        margin: 0 auto;
+    }
+
 
 }
